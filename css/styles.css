@@ -286,9 +286,18 @@ button.tab-btn {
     color: darkgray;
 }
 .inner-btn.active {
-    color: blue;
+    color: #12487B;
 }
 button.inner-btn:focus {
     border: none;
     outline: none;
+}
+.content-tab-image {
+    position: absolute;
+    top:26rem;
+    left: 50rem;
+}
+.content-tab-image img {
+    width: 100%;
+    height: 22rem;
 }
