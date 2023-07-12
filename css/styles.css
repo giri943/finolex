@@ -166,3 +166,129 @@ p.plumbing-description {
     font-family: "Montserrat-500";
     text-align: justify;
 }
+.main-container {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 96rem;
+}
+.tab-box {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: space-between;
+    padding:73px;
+    
+}
+button.tab-btn {
+    font-family: 'Montserrat-800';
+    color: rgb(165, 164, 164);
+    padding:1rem;
+    border-radius:10px;
+    outline:none;
+    border:none;
+    background:none;
+    transition: color 1s;
+}
+.tab-btn:focus {
+    border: none;
+    outline: none;
+}
+.tab-btn.active {
+    background-color:yellow;
+    color: rgba(0, 0, 255, 0.938);  
+    font-family: 'Montserrat-800';
+    outline:none;
+}
+/*pseduo tab arrow*/
+/* .tab-btn.active:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 182;
+    left: 14%;
+    bottom: -10px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #fff000;
+} */
+.content-box .content {
+    display:none;
+}
+.content.active {
+    display: block;
+}
+.inner-content-benifits {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+.inner-content-benifits p {
+    width: 49%;
+    margin-left: 10px;
+}  
+.inner-content-benifits img {
+    width: 6%; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
+    margin-right: 10px; /* Add spacing between the image and paragraph */
+}
+.inner-content-application {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+.inner-content-application p {
+    width: 49%;
+    margin-left: 10px;
+}  
+.inner-content-application img {
+    width: 6%; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
+    margin-right: 10px; /* Add spacing between the image and paragraph */
+}
+.benefits {
+    display:none;
+}
+.benefits.active {
+    display: block;
+    padding-top: 10px;
+}
+.application {
+    display:none;
+}
+.application.active {
+    display: block;
+    padding-top: 10px;
+}
+.content-box {
+    width: 100%;
+    padding-left: 6rem;
+    padding-right: 15rem;
+}
+.content p {
+    font-family: 'Montserrat-500';
+    letter-spacing: 1px;
+}
+.inner-tab {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    font-family: 'Montserrat-500';
+}
+.inner-btn {
+    padding: 6px;
+    background: none;
+    outline:none;
+    border:none;
+    color: darkgray;
+}
+.inner-btn.active {
+    color: blue;
+}
+button.inner-btn:focus {
+    border: none;
+    outline: none;
+}
