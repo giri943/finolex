@@ -420,3 +420,40 @@ img.card-img-top.rounded-circle.circle {
     left:4rem;
     position: relative;
 }
+.card {
+    margin: 1em auto;
+}
+.testimonial-bg {
+    background-image: url(../assets//testimonials-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 47rem;
+    height: 100vh;
+}
+.testimonial-heading {
+    font-family: 'Montserrat-800';
+    font-size:34px;
+    color:yellow;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+} 
+.cards.container {
+    display: flex;
+    justify-content: space-around;
+}
+.col-md-4 .card-box {
+    background-color: transparent;
+    border: none;
+}
+p.card-text.card-testimonial {
+    color: whitesmoke;
+    font-family: 'Montserrat-500';
+}
+.card-body.testimonial-body {
+    padding: 0px;
+    padding-top: 25px;
+}
