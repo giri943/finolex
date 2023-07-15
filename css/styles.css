@@ -457,3 +457,58 @@ p.card-text.card-testimonial {
     padding: 0px;
     padding-top: 25px;
 }
+.faq-bg {
+    background-image: url(../assets//faq-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 47rem;
+    height: 100vh;
+}
+.faq-heading {
+    font-family: 'Montserrat-800';
+    font-size:34px;
+    color:#0094d9;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.col-md-6.faq-box {
+    display: table-cell;
+}
+.faq-accordion-item {
+    border: 2px solid skyblue;
+    margin-bottom: 32px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.faq-accordion-title {
+    font-family: 'Montserrat-800';
+    font-size: 21px;
+    color:#0094d9;
+    padding-top: 10px;
+}
+.faq-accordion-content {
+    font-family: 'Montserrat-500';
+    padding-top: 5px;
+    padding-bottom: 10px;
+    display: none;
+}
+.faq-accordion-content.active {
+    font-family: 'Montserrat-500';
+    padding-top: 5px;
+    padding-bottom: 10px;
+    display: block;
+}
+.faq-img {
+    position: relative;
+    left: 28rem;
+    bottom: 3rem;
+}
+.faq-img.active {
+    position: relative;
+    left: 28rem;
+    bottom: 10rem;
+}

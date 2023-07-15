@@ -61,3 +61,57 @@ accordions.forEach(item => {
     }
   });
 });
+
+// const faqAccordions = document.querySelectorAll('.faq-accordion-item')
+// faqAccordions.forEach(accordion =>{
+//     const heading = accordion.querySelector('.faq-accordion-title')
+//     const content = accordion.querySelector('.faq-accordion-content')
+//     const faqImage = accordion.querySelector('.faq-img')
+    
+//     heading.addEventListener('click', ()=>{
+//             faqAccordions.forEach(acc =>{
+//                 acc.classList.remove('active')
+//                 acc.querySelector('.faq-accordion-title').classList.remove('active')
+//                 acc.querySelector('.faq-accordion-content').classList.remove('active')
+//                 acc.querySelector('.faq-img').classList.remove('active')
+//                 let image = acc.querySelector('.faq-img img')
+//                 console.log(image);
+//                 image.src = './assets/plus.svg'
+//             })
+//             accordion.classList.add('active')
+//             heading.classList.add('active')
+//             content.classList.add('active')
+//             faqImage.classList.add('active')
+//             let image = faqImage.querySelector('.faq-img img')
+//             image.src='./assets/cross.svg' 
+//     })
+// })
+const faqAccordions = document.querySelectorAll('.faq-accordion-item');
+
+faqAccordions.forEach((accordion) => {
+  const heading = accordion.querySelector('.faq-accordion-title');
+  const content = accordion.querySelector('.faq-accordion-content');
+  const faqImage = accordion.querySelector('.faq-img');
+
+  heading.addEventListener('click', () => {
+    const isActive = accordion.classList.contains('active');
+
+    faqAccordions.forEach((acc) => {
+      acc.classList.remove('active');
+      acc.querySelector('.faq-accordion-title').classList.remove('active');
+      acc.querySelector('.faq-accordion-content').classList.remove('active');
+      acc.querySelector('.faq-img').classList.remove('active');
+      const image = acc.querySelector('.faq-img img');
+      image.src = './assets/plus.svg';
+    });
+
+    if (!isActive) {
+      accordion.classList.add('active');
+      heading.classList.add('active');
+      content.classList.add('active');
+      faqImage.classList.add('active');
+      const image = faqImage.querySelector('.faq-img img');
+      image.src = './assets/cross.svg';
+    }
+  });
+});
