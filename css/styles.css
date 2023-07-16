@@ -523,6 +523,11 @@ p.card-text.card-testimonial {
     top: 47rem;
     height: 100vh;
 }
+.about-cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .about-title {
     font-family: 'Montserrat-800';
     font-size:34px;
@@ -549,6 +554,5 @@ button.cta-about {
     background:none;
     background-color: yellow;
     top:32px;
-    left:36rem;
     position: relative;
 }
